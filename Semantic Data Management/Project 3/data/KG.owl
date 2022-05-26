@@ -1,0 +1,163 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/zyj/ontologies/2022/4/untitled-ontology-6#"
+     xml:base="http://www.semanticweb.org/zyj/ontologies/2022/4/untitled-ontology-6"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/zyj/ontologies/2022/4/publication">
+        <rdfs:comment>This is about Tbox of publication KG</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/zyj/ontologies/2022/4/publication#Accepted_Paper -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zyj/ontologies/2022/4/publication#Accepted_Paper">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zyj/ontologies/2022/4/publication#Paper"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/zyj/ontologies/2022/4/publication#Unaccepted_Paper"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zyj/ontologies/2022/4/publication#Area -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zyj/ontologies/2022/4/publication#Area"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zyj/ontologies/2022/4/publication#Author -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zyj/ontologies/2022/4/publication#Author">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zyj/ontologies/2022/4/publication#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zyj/ontologies/2022/4/publication#Chair -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zyj/ontologies/2022/4/publication#Chair">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zyj/ontologies/2022/4/publication#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zyj/ontologies/2022/4/publication#Conference -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zyj/ontologies/2022/4/publication#Conference"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zyj/ontologies/2022/4/publication#Demo_Paper -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zyj/ontologies/2022/4/publication#Demo_Paper">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zyj/ontologies/2022/4/publication#Paper"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/zyj/ontologies/2022/4/publication#Long_Paper"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/zyj/ontologies/2022/4/publication#Poster"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/zyj/ontologies/2022/4/publication#Short_Paper"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zyj/ontologies/2022/4/publication#Edition_proceedings -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zyj/ontologies/2022/4/publication#Edition_proceedings"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zyj/ontologies/2022/4/publication#Editor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zyj/ontologies/2022/4/publication#Editor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zyj/ontologies/2022/4/publication#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zyj/ontologies/2022/4/publication#Journal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zyj/ontologies/2022/4/publication#Journal"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zyj/ontologies/2022/4/publication#Long_Paper -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zyj/ontologies/2022/4/publication#Long_Paper">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zyj/ontologies/2022/4/publication#Paper"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/zyj/ontologies/2022/4/publication#Poster"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/zyj/ontologies/2022/4/publication#Short_Paper"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zyj/ontologies/2022/4/publication#Paper -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zyj/ontologies/2022/4/publication#Paper"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zyj/ontologies/2022/4/publication#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zyj/ontologies/2022/4/publication#Person"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zyj/ontologies/2022/4/publication#Poster -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zyj/ontologies/2022/4/publication#Poster">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zyj/ontologies/2022/4/publication#Paper"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/zyj/ontologies/2022/4/publication#Short_Paper"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zyj/ontologies/2022/4/publication#Review -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zyj/ontologies/2022/4/publication#Review"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zyj/ontologies/2022/4/publication#Reviewer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zyj/ontologies/2022/4/publication#Reviewer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zyj/ontologies/2022/4/publication#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zyj/ontologies/2022/4/publication#Short_Paper -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zyj/ontologies/2022/4/publication#Short_Paper">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zyj/ontologies/2022/4/publication#Paper"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zyj/ontologies/2022/4/publication#Unaccepted_Paper -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zyj/ontologies/2022/4/publication#Unaccepted_Paper">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zyj/ontologies/2022/4/publication#Paper"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zyj/ontologies/2022/4/publication#Volumn -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zyj/ontologies/2022/4/publication#Volumn"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
