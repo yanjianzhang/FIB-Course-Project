@@ -8,4 +8,6 @@ To get our result, run the follow steps:
    python SDM_Query.py
    ```
 
-The data preprocessed code is attached in create_csv.R, it is not necessary to use, since we provide all the csv file in directory "dict" for graph creation.
+The data preprocessed code is attached in create_csv.R
+
+However, it is not necessary to use, since we provide all the generated csv file in directory "dict" for graph creation.
